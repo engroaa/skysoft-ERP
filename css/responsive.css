@@ -1,0 +1,756 @@
+/* ============================================
+   RESPONSIVE.CSS - جميع أنماط الاستجابة
+============================================ */
+
+/* ==========================
+   TABLET - 992px فأقل
+========================== */
+@media (max-width: 992px) {
+    /* هيرو */
+    .hero {
+        flex-direction: column;
+        padding: 140px 5% 40px;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 400px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* عن */
+    .about {
+        flex-direction: column;
+        padding: 60px 5%;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .about-list li {
+        justify-content: center;
+    }
+
+    /* خدمات ومنتجات */
+    .services {
+        padding: 60px 5%;
+    }
+
+    .services-grid,
+    .products-grid,
+    .why-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* قسم لماذا */
+    .why {
+        padding: 60px 5%;
+    }
+
+    /* جهات الاتصال */
+    .contact-preview {
+        padding: 60px 5%;
+    }
+
+    .contact-preview-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-map iframe {
+        min-height: 300px;
+    }
+
+    /* القائمة */
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px 5%;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        gap: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links a {
+        padding: 12px 0;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 16px;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .menu-toggle {
+        display: block !important;
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+
+    /* أزرار */
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+
+    /* العناوين */
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    /* الفوتر */
+    .footer {
+        padding: 50px 5% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 30px;
+    }
+
+    /* الأسئلة الشائعة */
+    .faq-question {
+        font-size: 16px;
+    }
+
+    /* الإحصائيات */
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 50px 5%;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-card h2 {
+        font-size: 30px;
+    }
+}
+
+/* ==========================
+   MOBILE - 768px فأقل
+========================== */
+@media (max-width: 768px) {
+    /* هيرو */
+    .hero {
+        padding: 120px 5% 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* عن */
+    .about {
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 26px;
+    }
+
+    .about-list li {
+        font-size: 16px;
+    }
+
+    /* خدمات ومنتجات */
+    .services-grid,
+    .products-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card,
+    .product-card,
+    .why-card {
+        padding: 25px 20px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    /* العناوين */
+    .section-header h2 {
+        font-size: 26px;
+    }
+
+    .section-title {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+
+    /* جهات الاتصال */
+    .contact-item {
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .contact-item i {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .contact-item h3 {
+        font-size: 16px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    .contact-map iframe {
+        min-height: 250px;
+    }
+
+    /* صفحة من نحن - هيرو */
+    .page-hero {
+        height: 250px;
+        margin-top: 70px;
+    }
+
+    .page-content h1 {
+        font-size: 32px;
+    }
+
+    .page-content p {
+        font-size: 16px;
+    }
+
+    /* الفوتر */
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 50px;
+    }
+
+    .footer-col h3 {
+        font-size: 18px;
+    }
+
+    /* الإحصائيات */
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 5%;
+    }
+
+    .stat-card h2 {
+        font-size: 26px;
+    }
+
+    .stat-card p {
+        font-size: 14px;
+    }
+
+    /* الأسئلة الشائعة */
+    .faq-item {
+        padding: 18px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    /* أزرار CTA */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .cta h2 {
+        font-size: 26px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+
+    /* زر العودة للأعلى */
+    #topBtn {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* التوست */
+    .toast {
+        padding: 10px 20px;
+        font-size: 14px;
+        bottom: 20px;
+        max-width: 90%;
+    }
+
+    /* البوت المساعد */
+    .assistant-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .assistant-popup {
+        bottom: 75px;
+        left: 15px;
+        right: 15px;
+        width: auto;
+        max-width: none;
+        border-radius: 16px;
+    }
+
+    .assistant-body {
+        padding: 18px;
+    }
+
+    .assistant-greeting {
+        font-size: 16px;
+    }
+
+    .assistant-dropdown-btn {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .assistant-dropdown-menu li {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .answer-content p {
+        font-size: 14px;
+    }
+
+    /* صفحة الخدمات - الفيديوهات */
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-header h2 {
+        font-size: 24px;
+    }
+
+    .video-info h3 {
+        font-size: 17px;
+    }
+
+    .video-info {
+        padding: 15px 18px 20px;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .play-button i {
+        font-size: 22px;
+    }
+
+    /* صفحة لماذا نحن */
+    .why-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .different-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .different-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .different-number {
+        font-size: 28px;
+        min-width: auto;
+    }
+
+    .stat-item h2 {
+        font-size: 32px;
+    }
+
+    /* صفحة آراء العملاء */
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-rating {
+        margin-right: 0;
+    }
+
+    .testimonial-text {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .testimonial-text::before {
+        display: none;
+    }
+
+    .faq-help-box {
+        padding: 25px 20px;
+    }
+
+    .faq-help-box h3 {
+        font-size: 20px;
+    }
+
+    /* صفحة التواصل */
+    .contact-page-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-page-card {
+        padding: 25px 20px;
+    }
+
+    .contact-map-wrapper iframe {
+        height: 250px;
+    }
+}
+
+/* ==========================
+   MOBILE SMALL - 480px فأقل
+========================== */
+@media (max-width: 480px) {
+    /* هيرو */
+    .hero {
+        padding: 110px 4% 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+
+    /* عن */
+    .about-content h2 {
+        font-size: 22px;
+    }
+
+    .about-list li {
+        font-size: 14px;
+    }
+
+    /* العناوين */
+    .section-header h2 {
+        font-size: 22px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+
+    /* الخدمات */
+    .service-card,
+    .product-card,
+    .why-card {
+        padding: 20px 15px;
+    }
+
+    .service-icon,
+    .why-icon {
+        font-size: 35px;
+    }
+
+    .service-card h3,
+    .product-card h3,
+    .why-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p,
+    .product-card p,
+    .why-card p {
+        font-size: 14px;
+    }
+
+    /* المنتجات */
+    .product-card img {
+        height: 150px;
+    }
+
+    /* النافبار */
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+    }
+
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    /* الإحصائيات */
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 30px 4%;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-card h2 {
+        font-size: 22px;
+    }
+
+    .stat-card p {
+        font-size: 13px;
+    }
+
+    /* الفوتر */
+    .footer {
+        padding: 40px 4% 15px;
+    }
+
+    .footer-col p {
+        font-size: 14px;
+    }
+
+    .footer-col ul li {
+        font-size: 14px;
+    }
+
+    /* البوت المساعد */
+    .assistant-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .assistant-popup {
+        bottom: 65px;
+        left: 10px;
+        right: 10px;
+        border-radius: 14px;
+    }
+
+    .assistant-header h3 {
+        font-size: 16px;
+    }
+
+    .assistant-header button {
+        font-size: 18px;
+    }
+
+    .assistant-body {
+        padding: 15px;
+    }
+
+    .assistant-greeting {
+        font-size: 15px;
+    }
+
+    .assistant-sub {
+        font-size: 13px;
+    }
+
+    /* أزرار */
+    .btn-primary,
+    .btn-secondary {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 50px 5%;
+    }
+
+    .cta h2 {
+        font-size: 22px;
+    }
+
+    .cta p {
+        font-size: 14px;
+    }
+
+    /* صفحة الخدمات - فيديوهات */
+    .services-videos {
+        padding: 20px 4% 40px;
+    }
+
+    .videos-grid {
+        gap: 15px;
+    }
+
+    .video-info h3 {
+        font-size: 16px;
+    }
+
+    .video-info p {
+        font-size: 14px;
+    }
+
+    /* صفحة من نحن - هيرو */
+    .page-hero {
+        height: 200px;
+        margin-top: 65px;
+    }
+
+    .page-content h1 {
+        font-size: 26px;
+    }
+
+    .page-content p {
+        font-size: 14px;
+    }
+
+    /* الأشكال المتطايرة */
+    .shape1 {
+        width: 80px;
+        height: 80px;
+        top: 20px;
+        right: 5%;
+    }
+
+    .shape2 {
+        width: 60px;
+        height: 60px;
+        left: 5%;
+        bottom: 20px;
+    }
+
+    .shape3 {
+        width: 40px;
+        height: 40px;
+        left: 25%;
+        top: 60px;
+    }
+}
+
+/* ==========================
+   TABLET LANDSCAPE - 768px إلى 992px
+========================== */
+@media (min-width: 769px) and (max-width: 992px) {
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .services-grid,
+    .products-grid,
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-preview-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
