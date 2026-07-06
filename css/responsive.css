@@ -754,3 +754,339 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* ============================================
+   إصلاحات إضافية للجوال
+============================================ */
+
+/* ==========================
+   إصلاح المينيو في كل الصفحات
+========================== */
+@media (max-width: 992px) {
+    /* تأكد من ظهور زر المينيو في كل الصفحات */
+    .menu-toggle {
+        display: block !important;
+        font-size: 28px;
+        cursor: pointer;
+        color: var(--primary-color);
+        background: none;
+        border: none;
+        padding: 5px;
+    }
+
+    /* تأكد من إخفاء القائمة افتراضياً */
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        padding: 20px 5%;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        gap: 5px;
+        border-radius: 0 0 20px 20px;
+        z-index: 999;
+        border-top: 3px solid var(--primary-color);
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links a {
+        padding: 14px 0;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 17px;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--primary-color);
+        padding-right: 10px;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a.active {
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    /* إخفاء زر "اطلب استشارة" في الجوال */
+    .navbar .btn {
+        display: none !important;
+    }
+
+    /* تصغير الشعار في الجوال */
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ==========================
+   إصلاح صفحة "من نحن" في الجوال
+========================== */
+@media (max-width: 768px) {
+    /* صفحة من نحن - تحسينات إضافية */
+    .page-hero {
+        height: 220px;
+        margin-top: 65px;
+    }
+
+    .page-content h1 {
+        font-size: 28px;
+    }
+
+    .page-content p {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    /* تحسين عرض المحتوى في صفحة من نحن */
+    .about {
+        padding: 40px 5% !important;
+        gap: 25px !important;
+    }
+
+    .about-image {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-image img {
+        border-radius: 16px;
+    }
+
+    .about-content {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 24px !important;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-list {
+        text-align: right;
+        padding: 0 10px;
+    }
+
+    .about-list li {
+        font-size: 15px !important;
+        justify-content: flex-start;
+        padding: 5px 0;
+    }
+
+    .about-list li::before {
+        font-size: 16px;
+    }
+
+    /* تحسين الأزرار في الجوال */
+    .about-content .btn-primary {
+        display: inline-block;
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+
+    /* إخفاء الأشكال المتطايرة في الجوال الصغير */
+    .shape1,
+    .shape2,
+    .shape3 {
+        display: none;
+    }
+}
+
+/* ==========================
+   إصلاحات إضافية للجوال الصغير
+========================== */
+@media (max-width: 480px) {
+    /* تصغير إضافي للهيرو في صفحة من نحن */
+    .page-hero {
+        height: 180px;
+        margin-top: 60px;
+    }
+
+    .page-content h1 {
+        font-size: 24px;
+    }
+
+    .page-content p {
+        font-size: 14px;
+    }
+
+    /* تحسين العناوين */
+    .about-content h2 {
+        font-size: 20px !important;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .about-list li {
+        font-size: 14px !important;
+    }
+
+    /* تحسين الأزرار */
+    .about-content .btn-primary {
+        padding: 10px 22px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+}
+
+/* ==========================
+   إصلاح الفوتر في الجوال
+========================== */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 5% 20px !important;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        text-align: center;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-col h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .footer-col ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-col a {
+        font-size: 15px;
+    }
+
+    .footer-logo {
+        width: 50px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+    .copyright {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+}
+
+/* ==========================
+   إصلاح البوت المساعد في الجوال
+========================== */
+@media (max-width: 768px) {
+    .sky-assistant {
+        bottom: 20px;
+        left: 20px;
+        z-index: 999;
+    }
+
+    .assistant-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .assistant-btn i {
+        font-size: 22px;
+    }
+
+    .assistant-popup {
+        bottom: 80px;
+        left: 15px;
+        right: 15px;
+        width: auto;
+        max-width: none;
+        border-radius: 16px;
+        max-height: 75vh;
+    }
+
+    .assistant-body {
+        padding: 18px;
+    }
+
+    .assistant-greeting {
+        font-size: 16px;
+    }
+
+    .assistant-sub {
+        font-size: 13px;
+    }
+
+    .assistant-dropdown-btn {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .assistant-dropdown-menu li {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .answer-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sky-assistant {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .assistant-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .assistant-btn i {
+        font-size: 18px;
+    }
+
+    .assistant-popup {
+        bottom: 65px;
+        left: 10px;
+        right: 10px;
+        border-radius: 14px;
+    }
+
+    .assistant-body {
+        padding: 15px;
+    }
+
+    .assistant-greeting {
+        font-size: 15px;
+    }
+
+    .assistant-dropdown-btn {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .assistant-dropdown-menu li {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
