@@ -260,6 +260,7 @@ if (dropdownBtn && dropdownMenu) {
     // ============================================
     // 9. COPY EMAIL TOAST
     // ============================================
+    /*
     const copyEmail = document.getElementById('copyEmail');
     const toast = document.getElementById('toast');
 
@@ -274,7 +275,7 @@ if (dropdownBtn && dropdownMenu) {
                 }, 2500);
             });
         });
-    }
+    }*/
 
     // ============================================
     // 10. REVEAL ANIMATION

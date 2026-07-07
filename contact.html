@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Tags -->
     <meta name="description" content="تواصل مع Sky Soft للاستفسار عن خدماتنا وحلولنا البرمجية المتكاملة.">
     <meta name="keywords" content="Sky Soft, تواصل, اتصل بنا, استفسار, برامج محاسبة, ERP, CRM">
     <meta name="author" content="Sky Soft">
@@ -35,7 +34,7 @@
 <body>
 
 <!-- ============================================ -->
-<!-- 1. LOADER - نسخة محدثة -->
+<!-- 1. LOADER -->
 <!-- ============================================ -->
 <div id="loader">
     <div class="loader-container">
@@ -51,13 +50,14 @@
         <p class="loader-text">جاري التحميل...</p>
     </div>
 </div>
+
 <!-- ============================================ -->
 <!-- 2. PROGRESS BAR -->
 <!-- ============================================ -->
 <div id="progress-bar"></div>
 
 <!-- ============================================ -->
-<!-- 3. SKY ASSISTANT (البوت التفاعلي) -->
+<!-- 3. SKY ASSISTANT -->
 <!-- ============================================ -->
 <div class="sky-assistant">
     <button class="assistant-btn" id="assistantBtn">
@@ -76,7 +76,6 @@
         <p class="assistant-greeting">👋 أهلاً بك في Sky Assistant</p>
         <p class="assistant-sub">اختر سؤالك من القائمة للحصول على الإجابة:</p>
         
-        <!-- القائمة المنسدلة -->
         <div class="assistant-dropdown">
             <button class="assistant-dropdown-btn" id="dropdownBtn">
                 <span id="selectedQuestion">-- اختر سؤالك --</span>
@@ -115,7 +114,6 @@
     </div>
 </div>
 
-
 <!-- ============================================ -->
 <!-- 4. HEADER / NAVBAR -->
 <!-- ============================================ -->
@@ -130,10 +128,10 @@
         <ul class="nav-links">
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="about.html">من نحن</a></li>
-            <li><a href="Services.html">الخدمات</a></li>
+            <li><a href="services.html">الخدمات</a></li>
             <li><a href="products.html">المنتجات</a></li>
-            <li><a href="whyUs.html">لماذا Sky Soft؟</a></li>
-            <li><a href="Testimonials.html">آراء العملاء</a></li>
+            <li><a href="whyus.html">لماذا Sky Soft؟</a></li>
+            <li><a href="testimonials.html">آراء العملاء</a></li>
             <li><a href="contact.html" class="active">تواصل معنا</a></li>
         </ul>
         <a href="https://wa.me/201551888205?text=السلام عليكم، أرغب في طلب استشارة بخصوص خدمات Sky Soft." 
@@ -195,29 +193,23 @@
             </a>
         </div>
 
-        <!-- بطاقة البريد الإلكتروني -->
-        <div class="contact-page-card">
-            <div class="contact-page-icon">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h3>البريد الإلكتروني</h3>
-            <p>راسلنا وسنرد عليك</p>
-            <button id="copyEmail" class="contact-page-link copy-btn">
-                <i class="fa-regular fa-copy"></i>
-                huseinsalih2020@gmail.com
-            </button>
-        </div>
-
         <!-- بطاقة العنوان -->
         <div class="contact-page-card">
             <div class="contact-page-icon">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
             <h3>العنوان</h3>
-            <p>شبين القناطر، محافظة القليوبية</p>
+            <p>وسط البلد - التحرير</p>
             <p style="color: #888; font-size: 14px; margin-top: 5px;">
-                جمهورية مصر العربية
+                القاهرة، جمهورية مصر العربية
             </p>
+            <a href="https://maps.google.com/?q=30.0444,31.2345" 
+               target="_blank" 
+               class="contact-page-link" 
+               style="margin-top: 10px;">
+                <i class="fa-solid fa-map-location-dot"></i>
+                عرض على الخريطة
+            </a>
         </div>
     </div>
 </section>
@@ -230,7 +222,7 @@
     </div>
     <div class="contact-map-wrapper">
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.123456789!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQwLjAiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sar!2seg!4v1234567890" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.456789!2d31.2345!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e123456789%3A0x123456789abcdef!2z2YXYsdmD2LIg2KfZhNmF2YbYtCDYp9mE2YXYrdin2YbYqtiq2Kk!5e0!3m2!1sar!2seg!4v1700000000000" 
             allowfullscreen="" 
             loading="lazy">
         </iframe>
@@ -250,7 +242,7 @@
 </section>
 
 <!-- ============================================ -->
-<!-- 6. FOOTER -->
+<!-- 6. FOOTER - بدون بريد إلكتروني -->
 <!-- ============================================ -->
 <footer class="footer">
     <div class="footer-container">
@@ -266,8 +258,10 @@
             <ul>
                 <li><a href="index.html">الرئيسية</a></li>
                 <li><a href="about.html">من نحن</a></li>
-                <li><a href="Services.html">الخدمات</a></li>
+                <li><a href="services.html">الخدمات</a></li>
                 <li><a href="products.html">المنتجات</a></li>
+                <li><a href="whyus.html">لماذا Sky Soft؟</a></li>
+                <li><a href="testimonials.html">آراء العملاء</a></li>
                 <li><a href="contact.html">تواصل معنا</a></li>
             </ul>
         </div>
@@ -275,8 +269,7 @@
             <h3>تواصل معنا</h3>
             <p><i class="fa-solid fa-phone"></i> <a href="tel:+201551888205" style="color: inherit; text-decoration: none;">+20 15 51888205</a></p>
             <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/201551888205?text=السلام عليكم، أرغب في الاستفسار عن خدمات Sky Soft." target="_blank" style="color: inherit; text-decoration: none;">+20 15 51888205</a></p>
-            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:huseinsalih2020@gmail.com" style="color: inherit; text-decoration: none;">huseinsalih2020@gmail.com</a></p>
-            <p><i class="fa-solid fa-location-dot"></i> مصر</p>
+            <p><i class="fa-solid fa-location-dot"></i> مصر - القاهرة - وسط البلد - التحرير</p>
         </div>
     </div>
     <hr>
